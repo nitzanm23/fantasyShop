@@ -16,7 +16,7 @@
         src="./images/fantasy-shop-logo.png"
         alt="Fantasy Shop"
         class="imgCenter"
-        style="width: 15%; border-radius: 0px;"
+        id="imgLogo"
       />
     </a>
     <hr />
@@ -25,7 +25,7 @@
       src="./images/shopping1.avif"
       alt="Shopping"
       class="imgCenter"
-      style="width: 80%; height: 400px; border-radius: 10px"
+      id="imgH1"
     />
     <h1>Welcome To Fantasy Shop</h1>
 
@@ -33,10 +33,9 @@
     <img
       src="./images/shopping2.webp"
       alt="Shopping"
-      class="imgCenter"
-      style="width: 60%; height: 250px;"
+      class="imgCenter imgTextWidth"
     />
-    <p style="top: -210px; margin-bottom: -100px">
+    <p>
       Fantasy Shop is guided by four principles: customer obsession rather
       <br />
       than competitor focus, passion for invention, commitment to <br />
@@ -55,10 +54,9 @@
     <img
       src="./images/shopping3.png"
       alt="Shopping"
-      class="imgCenter"
-      style="width: 60%; height: 250px;"
+      class="imgCenter imgTextWidth"
     />
-    <p style="top: -200px; margin-bottom: -100px">
+    <p>
       Although our business has evolved over the years, one constant is
       <br />
       customers’ desire for lower prices, better selection, and convenient
@@ -76,10 +74,9 @@
     <img
       src="./images/shopping4.jpg"
       alt="Shopping"
-      class="imgCenter"
-      style="width: 60%; height: 250px;"
+      class="imgCenter imgTextWidth"
     />
-    <p style="top: -185px; margin-bottom: -100px">
+    <p>
       The customer is at the heart of everything we do. Fantasy Shop is a
       <br />
       place where smart, passionate people obsess over customers and
@@ -95,10 +92,9 @@
     <img
       src="./images/shopping5.jpeg"
       alt="Shopping"
-      class="imgCenter"
-      style="width: 60%; height: 250px;"
+      class="imgCenter imgTextWidth"
     />
-    <p style="top: -170px">
+    <p>
       We are committed to and invested in sustainability because it’s a win
       <br />
       all around—it’s good for the planet, for business, for our customers, and
@@ -107,56 +103,99 @@
     </p>
 
     <h2>Gallery</h2>
-    <p>
+    <p id="pGallery">
       <img
         src="./images/1.jpg"
         alt="1"
-        class="imgCenter"
-        style="width: 80%"
+        class="imgCenter imgGalleryWidth"
+        style="top: 0px"
       />
-      <img
-        src="./images/2.jpg"
-        alt="2"
-        class="imgCenter"
-        style="width: 80%"
-      />
-      <img
-        src="./images/3.png"
-        alt="3"
-        class="imgCenter"
-        style="width: 80%"
-      />
-      <img
-        src="./images/4.jpg"
-        alt="4"
-        class="imgCenter"
-        style="width: 80%;"
-      />
-      <img
-        src="./images/5.jpg"
-        alt="5"
-        class="imgCenter"
-        style="width: 80%;"
-      />
-      <img
-        src="./images/6.jpg"
-        alt="6"
-        class="imgCenter"
-        style="width: 80%;"
-      />
-      <img
-        src="./images/7.jpeg"
-        alt="7"
-        class="imgCenter"
-        style="width: 80%;"
-      />
-      <img
-        src="./images/8.jpg"
-        alt="8"
-        class="imgCenter"
-        style="width: 80%;"
-      />
+      <img src="./images/2.jpg" alt="2" class="imgCenter imgGalleryWidth" />
+      <img src="./images/3.png" alt="3" class="imgCenter imgGalleryWidth" />
+      <img src="./images/4.jpg" alt="4" class="imgCenter imgGalleryWidth" />
+      <img src="./images/5.jpg" alt="5" class="imgCenter imgGalleryWidth" />
+      <img src="./images/6.jpg" alt="6" class="imgCenter imgGalleryWidth" />
+      <img src="./images/7.jpeg" alt="7" class="imgCenter imgGalleryWidth" />
+      <img src="./images/8.jpg" alt="8" class="imgCenter imgGalleryWidth" />
     </p>
+
+    <h2>Tables</h2>
+    <table>
+      <caption>
+        Featured Categories
+      </caption>
+      <tr>
+        <th>Category ID</th>
+        <th>Category Name</th>
+        <th>Number of Products</th>
+        <th>Average Price</th>
+      </tr>
+      <tr>
+        <td>C01</td>
+        <td>Electronics</td>
+        <td>1200</td>
+        <td>$250.00</td>
+      </tr>
+      <tr>
+        <td>C02</td>
+        <td>Clothing</td>
+        <td>800</td>
+        <td>$45.00</td>
+      </tr>
+      <tr>
+        <td>C03</td>
+        <td>Home and Kitchen</td>
+        <td>1500</td>
+        <td>$80.00</td>
+      </tr>
+      <tr>
+        <td>C04</td>
+        <td>Sports and Outdoors</td>
+        <td>600</td>
+        <td>$35.00</td>
+      </tr>
+    </table>
+
+    <table>
+      <caption>
+        Customer Reviews
+      </caption>
+      <tr>
+        <th>Review ID</th>
+        <th>Product Name</th>
+        <th>Rating (out of 5)</th>
+        <th>Customer Name</th>
+        <th>Date</th>
+      </tr>
+      <tr>
+        <td>R001</td>
+        <td>Bluetooth Speaker</td>
+        <td>4.5</td>
+        <td>Alice</td>
+        <td>2024-01-05</td>
+      </tr>
+      <tr>
+        <td>R002</td>
+        <td>Leather Backpack</td>
+        <td>4.2</td>
+        <td>Bob</td>
+        <td>2024-01-08</td>
+      </tr>
+      <tr>
+        <td>R003</td>
+        <td>Coffee Maker</td>
+        <td>4.8</td>
+        <td>Charlie</td>
+        <td>2024-01-10</td>
+      </tr>
+      <tr>
+        <td>R004</td>
+        <td>Fitness Tracker</td>
+        <td>3.9</td>
+        <td>Dana</td>
+        <td>2024-01-12</td>
+      </tr>
+    </table>
 
     <div class="waviy">
       <span style="--i: 1">C</span>
@@ -180,12 +219,16 @@
     <hr />
     <h2>
       Founders:
-      <img src="./images/nitzan.png" alt="Nitzan" style="width: 3%" />Nitzan
-      Mizrachi &
-      <img src="./images/shon.png" alt="Shon" style="width: 3%" />Shon Frenkel &
-      <img src="./images/barak.png" alt="Barak" style="width: 3%" />Barak
+      <img
+        src="./images/nitzan.png"
+        alt="Nitzan"
+        class="imgFooterWidth"
+      />Nitzan Mizrachi &
+      <img src="./images/shon.png" alt="Shon" class="imgFooterWidth" />Shon
+      Frenkel &
+      <img src="./images/barak.png" alt="Barak" class="imgFooterWidth" />Barak
       Panizel
     </h2>
-    <h6 style="text-align: center">Copyright © 2024. All rights reserved.</h6>
+    <h6>Copyright © 2024. All rights reserved.</h6>
   </body>
 </html>
