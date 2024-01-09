@@ -83,6 +83,29 @@ table,
 th,
 td {
   text-align: center;
-  border: 5px groove bisque;
-  border-collapse: collapse;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
 }
+th {
+  background-color: black;
+  text-transform: uppercase;
+}
+tr:nth-child(even) {
+  background: #aca5a5;
+}
+tr:nth-child(odd) {
+  background: #696a6d;
+}
+caption {
+  color: #000;
+  font-size: x-large;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.row {
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
