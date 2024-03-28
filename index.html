@@ -5,285 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="keywords"
-      content="Fantasy Shop,Fantasy,Shop,Retail,Buy, Sell, Products"
+      content="Fantasy Shop, Fantasy, Shop, Retail, Buy, Sell, Products, E-Commerce"
     />
     <title>Fantasy Shop</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Title icon -->
+    <link rel="icon" href="./assets/icons/logo-icon.ico" type="image/x-icon" />
+    <!-- Styles -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <a href="./index.html" target="_blank">
+
+  <body onload="myLoaderFunction()">
+    <!-- Loader show content -->
+    <div id="loader">
       <img
-        src="./images/fantasy-shop-logo.png"
+        src="./assets/images/logo-o1.svg"
+        class="animate-bottom my-img-drop-black-shadow"
         alt="Fantasy Shop"
-        class="imgCenter"
-        id="imgLogo"
+        draggable="false"
       />
-    </a>
-    <hr />
-
-    <img
-      src="./images/shopping1.avif"
-      alt="Shopping"
-      class="imgCenter"
-      id="imgH1"
-    />
-    <h1>Welcome To Fantasy Shop</h1>
-
-    <h2>Who We Are</h2>
-    <img
-      src="./images/shopping2.webp"
-      alt="Shopping"
-      class="imgCenter imgTextWidth"
-    />
-    <p>
-      Fantasy Shop is guided by four principles: customer obsession rather
-      <br />
-      than competitor focus, passion for invention, commitment to <br />
-      operational excellence, and long-term thinking. Fantasy Shop strives to
-      <br />
-      be Earth’s most customer-centric company, Earth’s best employer, and
-      <br />
-      Earth’s safest place to work. Customer reviews, 1-Click shopping,
-      <br />
-      personalized recommendations are some of the things pioneered by
-      <br />
-      Fantasy Shop.
-    </p>
-
-    <h2>What We Do</h2>
-    <img
-      src="./images/shopping3.png"
-      alt="Shopping"
-      class="imgCenter imgTextWidth"
-    />
-    <p>
-      Although our business has evolved over the years, one constant is
-      <br />
-      customers’ desire for lower prices, better selection, and convenient
-      <br />
-      services. Today, Fantasy Shop shoppers can find what they’re looking
-      <br />
-      for online and in person. From delivering fresh produce to their
-      <br />
-      doorstep to creating and distributing movies, music, and more, we are
-      <br />
-      always finding new ways to delight our customers.
-    </p>
-
-    <h2>Our Workplace</h2>
-    <img
-      src="./images/shopping4.jpg"
-      alt="Shopping"
-      class="imgCenter imgTextWidth"
-    />
-    <p>
-      The customer is at the heart of everything we do. Fantasy Shop is a
-      <br />
-      place where smart, passionate people obsess over customers and
-      <br />
-      innovate on their behalf. We also invest in employees’ success.
-      <br />
-      Fantasy Shop provide free skills training to employees—helping them
-      <br />
-      further their careers in tech and in-demand roles .
-    </p>
-
-    <h2>Our Planet</h2>
-    <img
-      src="./images/shopping5.jpeg"
-      alt="Shopping"
-      class="imgCenter imgTextWidth"
-    />
-    <p>
-      We are committed to and invested in sustainability because it’s a win
-      <br />
-      all around—it’s good for the planet, for business, for our customers, and
-      <br />
-      for our communities.
-    </p>
-
-    <h2>Gallery</h2>
-    <p id="pGallery">
-      <img
-        src="./images/1.jpg"
-        alt="1"
-        class="imgCenter imgGalleryWidth"
-        style="top: 0px"
-      />
-      <img src="./images/2.jpg" alt="2" class="imgCenter imgGalleryWidth" />
-      <img src="./images/3.png" alt="3" class="imgCenter imgGalleryWidth" />
-      <img src="./images/4.jpg" alt="4" class="imgCenter imgGalleryWidth" />
-      <img src="./images/5.jpg" alt="5" class="imgCenter imgGalleryWidth" />
-      <img src="./images/6.jpg" alt="6" class="imgCenter imgGalleryWidth" />
-      <img src="./images/7.jpeg" alt="7" class="imgCenter imgGalleryWidth" />
-      <img src="./images/8.jpg" alt="8" class="imgCenter imgGalleryWidth" />
-    </p>
-
-    <h2>Tables</h2>
-    <div class="row">
-      <table>
-        <caption>
-          Featured Categories
-        </caption>
-        <tr>
-          <th>Category ID</th>
-          <th>Category Name</th>
-          <th>Number of Products</th>
-          <th>Average Price</th>
-        </tr>
-        <tr>
-          <td>C01</td>
-          <td>Electronics</td>
-          <td>1200</td>
-          <td>$250.00</td>
-        </tr>
-        <tr>
-          <td>C02</td>
-          <td>Clothing</td>
-          <td>800</td>
-          <td>$45.00</td>
-        </tr>
-        <tr>
-          <td>C03</td>
-          <td>Home and Kitchen</td>
-          <td>1500</td>
-          <td>$80.00</td>
-        </tr>
-        <tr>
-          <td>C04</td>
-          <td>Sports and Outdoors</td>
-          <td>600</td>
-          <td>$35.00</td>
-        </tr>
-      </table>
-
-      <table>
-        <caption>
-          Customer Reviews
-        </caption>
-        <tr>
-          <th>Review ID</th>
-          <th>Product Name</th>
-          <th>Rating (out of 5)</th>
-          <th>Customer Name</th>
-          <th>Date</th>
-        </tr>
-        <tr>
-          <td>R001</td>
-          <td>Bluetooth Speaker</td>
-          <td>4.5</td>
-          <td>Alice</td>
-          <td>2024-01-05</td>
-        </tr>
-        <tr>
-          <td>R002</td>
-          <td>Leather Backpack</td>
-          <td>4.2</td>
-          <td>Bob</td>
-          <td>2024-01-08</td>
-        </tr>
-        <tr>
-          <td>R003</td>
-          <td>Coffee Maker</td>
-          <td>4.8</td>
-          <td>Charlie</td>
-          <td>2024-01-10</td>
-        </tr>
-        <tr>
-          <td>R004</td>
-          <td>Fitness Tracker</td>
-          <td>3.9</td>
-          <td>Dana</td>
-          <td>2024-01-12</td>
-        </tr>
-      </table>
     </div>
+    <!-- Loader show content -->
+    <!-- Main div content -->
+    <div id="myLoaderDiv" class="animate-bottom">
+      <!-- Navbar -->
+      <nav class="navbar my-border-bottom-radius"></nav>
+      <!-- Navbar -->
 
-    <h2>Lists</h2>
-    <div class="row">
-      <ul class="ul-circles">
-        <h5>Kitchen Essentials</h5>
-        <li style="--accent-color: #d3302c">
-          <span>Stainless Steel Cookware Set</span>
-        </li>
-        <li style="--accent-color: #f3a22d">
-          <span>Non-Stick Baking Sheet</span>
-        </li>
-        <li style="--accent-color: #495460"><span>Chef's Knife Set</span></li>
-      </ul>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vel delectus consectetur, minus molestiae harum veniam vitae alias
+          optio ullam, provident sunt amet mollitia rerum necessitatibus
+          temporibus architecto, veritatis blanditiis.
+        </p>
+      </div>
 
-      <ol class="ul-circles">
-        <h5>Home Fitness Equipment</h5>
-        <li style="--accent-color: #d3302c">
-          <span>Resistance Bands Set</span>
-        </li>
-        <li style="--accent-color: #f3a22d">
-          <span>Yoga Mat with Non-Slip Surface</span>
-        </li>
-        <li style="--accent-color: #495460">
-          <span>Adjustable Dumbbell Pair</span>
-        </li>
-      </ol>
-
-      <ul class="ul-circles">
-        <h5>Outdoor Adventure Gear</h5>
-        <li style="--accent-color: #d3302c">
-          <span>Lightweight Camping Tent</span>
-        </li>
-        <li style="--accent-color: #f3a22d">
-          <span>Portable Camping Stove</span>
-        </li>
-        <li style="--accent-color: #495460">
-          <span>Insulated Stainless Steel Water Bottle</span>
-        </li>
-      </ul>
-
-      <ol class="ul-circles">
-        <h5>Home Office Organization</h5>
-        <li style="--accent-color: #d3302c">
-          <span>Ergonomic Office Chair</span>
-        </li>
-        <li style="--accent-color: #f3a22d">
-          <span>Desk Organizer with Drawers</span>
-        </li>
-        <li style="--accent-color: #495460">
-          <span>Noise-Canceling Wireless Headphones</span>
-        </li>
-      </ol>
+      <!-- Footer -->
+      <div class="my-dropdown-divider"></div>
+      <footer class="footer my-border-bottom-radius"></footer>
+      <!-- Footer -->
     </div>
+    <!-- Main div content -->
 
-    <div class="waviy">
-      <span style="--i: 1">C</span>
-      <span style="--i: 2">o</span>
-      <span style="--i: 3">m</span>
-      <span style="--i: 4">i</span>
-      <span style="--i: 5">n</span>
-      <span style="--i: 6">g</span>
-      <span style="--i: 7"> </span>
-      <span style="--i: 8"> </span>
-      <span style="--i: 9">S</span>
-      <span style="--i: 10">o</span>
-      <span style="--i: 11">o</span>
-      <span style="--i: 12">n</span>
-      <span style="--i: 13"> </span>
-      <span style="--i: 14">.</span>
-      <span style="--i: 15">.</span>
-      <span style="--i: 16">.</span>
-    </div>
-
-    <hr />
-    <h2>
-      Founders:
-      <img
-        src="./images/nitzan.png"
-        alt="Nitzan"
-        class="imgFooterWidth"
-      />Nitzan Mizrachi &
-      <img src="./images/shon.png" alt="Shon" class="imgFooterWidth" />Shon
-      Frenkel &
-      <img src="./images/barak.png" alt="Barak" class="imgFooterWidth" />Barak
-      Panizel
-    </h2>
-    <h6>Copyright © 2024. All rights reserved.</h6>
+    <!-- Scripts -->
+    <!-- Your custom scripts (optional) -->
+    <!-- Loader show content -->
+    <script type="text/javascript" src="./js/loader_show_content.js"></script>
+    <!-- nav -->
+    <script src="js/nav.js"></script>
+    <!-- footer -->
+    <script src="js/footer.js"></script>
+    <!-- End scripts here-->
   </body>
 </html>
