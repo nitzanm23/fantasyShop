@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./flags.css');
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./general.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.5*var(--sizing-percent));
+    }
+}
+
+@media only screen and (max-width: 539px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.5*var(--sizing-percent));
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.4*var(--sizing-percent));
+    }
+}
+
+@media only screen and (max-width: 444px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.65*var(--sizing-percent));
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.55*var(--sizing-percent));
+    }
+}
+
+@media only screen and (max-width: 290px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.45*var(--sizing-percent));
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* Line under h2 position */
+    .h2-main-section::before,
+    .h2-main-section::after {
+        top: calc(0.5*var(--sizing-percent));
+    }
+}
+
+/* Security css */
+body {
+    background: var(--clr-linear-gradient1-l);
+}
+
+/* Header */
+.parallax {
+    /* The image used */
+    background-image: url("../assets/images/security/security.png");
+}

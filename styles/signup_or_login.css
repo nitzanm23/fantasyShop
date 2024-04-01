@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./flags.css');
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./general.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #signup_or_login_video {
+        height: calc(90*var(--sizing-px));
+    }
+
+    .social-or-divider h3:before,
+    .social-or-divider h3:after {
+        width: calc(4* var(--sizing-percent));
+    }
+
+    .glow-on-hover {
+        width: calc(10* var(--sizing-percent));
+        font-size: calc(15* var(--sizing-rem));
+        margin-bottom: calc(15* var(--sizing-rem));
+    }
+
+    .col-fs-12 {
+        padding-right: calc(7.5* var(--sizing-px));
+        padding-left: calc(7.5* var(--sizing-px));
+    }
+
+    .card-body {
+        min-height: calc(var(--sizing-px) / 10);
+        padding-inline: calc(36.5* var(--sizing-rem));
+    }
+}
+
+
+@media only screen and (max-width: 474px) {
+    #signup_or_login_video {
+        height: calc(75*var(--sizing-px));
+    }
+
+    .social-or-divider h3:before,
+    .social-or-divider h3:after {
+        width: calc(3* var(--sizing-percent));
+    }
+
+    .h2-main-section {
+        font-size: calc(15* var(--sizing-rem));
+        margin-bottom: calc(15* var(--sizing-rem));
+    }
+
+    .form-control {
+        font-size: calc(7* var(--sizing-rem));
+    }
+
+    .glow-on-hover {
+        width: calc(6* var(--sizing-percent));
+        font-size: calc(10* var(--sizing-rem));
+        margin-bottom: calc(10* var(--sizing-rem));
+        margin-inline: auto;
+        padding-block: calc(4* var(--sizing-rem));
+    }
+
+    .space-between-elements {
+        margin-bottom: calc(10* var(--sizing-rem));
+        padding: calc(2* var(--sizing-rem)) 0;
+    }
+
+    .p-main-section {
+        font-size: calc(7* var(--sizing-rem));
+    }
+
+    .col-fs-12 {
+        padding-right: calc(2.5* var(--sizing-px));
+        padding-left: calc(2.5* var(--sizing-px));
+    }
+
+    .card-body {
+
+        padding-top: calc(15* var(--sizing-rem));
+        padding-inline: 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #signup_or_login_video {
+        height: calc(90*var(--sizing-px));
+    }
+
+    .social-or-divider h3:before,
+    .social-or-divider h3:after {
+        width: calc(4* var(--sizing-percent));
+    }
+
+    .glow-on-hover {
+        width: calc(10* var(--sizing-percent));
+        font-size: calc(15* var(--sizing-rem));
+        margin-bottom: calc(15* var(--sizing-rem));
+    }
+
+    .col-fs-12 {
+        padding-right: calc(7.5* var(--sizing-px));
+        padding-left: calc(7.5* var(--sizing-px));
+    }
+
+    .card-body {
+        min-height: calc(var(--sizing-px) / 10);
+        padding-inline: calc(36.5* var(--sizing-rem));
+    }
+}
+
+/* Sign Up & Login css */
+body {
+    background: var(--clr-linear-gradient1-l);
+}
+
+.video-container {
+    position: relative;
+    width: calc(10*var(--sizing-vw));
+    margin: 0 calc(-5*var(--sizing-vw) + 5*var(--sizing-percent));
+}
+
+.video-container video {
+    top: 0;
+    bottom: 0;
+    width: calc(10*var(--sizing-percent));
+    height: calc(10*var(--sizing-percent));
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+
+#signup_or_login_video {
+    position: static;
+    top: 0;
+    left: 0;
+    width: calc(10*var(--sizing-percent));
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: none;
+    display: block;
+    margin-bottom: 0px;
+    min-width: calc(10*var(--sizing-percent));
+    min-height: calc(10*var(--sizing-percent));
+    box-shadow: var(--box-shadow1);
+}
+
+.position-middle-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(10*var(--sizing-percent));
+    height: calc(10*var(--sizing-percent));
+    overflow: hidden;
+}
+
+.signup_or_login-container {
+    height: calc(10*var(--sizing-percent));
+}
+
+.signup_or_login-container div:first-child {
+    margin-top: calc(100*var(--sizing-rem));
+}
+
+.card {
+    background: var(--clr-linear-gradient-transparent);
+}
+
+/* Line under h2 position & width */
+.h2-main-section::before,
+.h2-main-section::after {
+    width: 0;
+}
+
+.h2-main-section {
+    color: var(--clr-invert);
+    filter: var(--drop-shadow-white);
+    margin-top: 0;
+    letter-spacing: calc(3*var(--sizing-rem));
+}
+
+/* Form control */
+.form-control {
+    border-bottom: calc(var(--sizing-px)/10) solid var(--clr-invert);
+    color: var(--clr-invert);
+    margin: auto;
+    width: calc(7*var(--sizing-percent));
+}
+
+.form-control:focus {
+    border-bottom: 1px solid var(--clr-invert);
+    box-shadow: 0 1px 0 0 var(--clr-invert);
+    color: var(--clr-invert);
+}
+
+.divider-main-section {
+    margin-block: calc(15* var(--sizing-rem));
+}
+
+::placeholder {
+    color: var(--clr-invert);
+    opacity: 0.5;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: var(--clr-invert);
+    opacity: 1;
+
+}
+
+.space-between-elements {
+    margin-top: calc(15* var(--sizing-rem));
+    margin-bottom: calc(16* var(--sizing-rem));
+    padding: calc(5* var(--sizing-rem)) 0;
+}
+
+
+
+.p-main-section {
+    color: var(--clr-invert);
+    margin-bottom: calc(15* var(--sizing-rem));
+}
+
+.social-or-divider h3 {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--sizing-rem);
+}
+
+.social-or-divider h3:before,
+.social-or-divider h3:after {
+    content: '';
+    display: inline-block;
+    height: calc(var(--sizing-px) / 10);
+    background: var(--clr-linear-gradient5);
+    line-height: 0;
+    margin: 0 calc(var(--sizing-px) / 2);
+}
+
+.social-icon-container {
+    padding-top: calc(1*var(--sizing-px));
+    margin-bottom: calc(-5*var(--sizing-px));
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+.social-icon-container a i {
+
+    font-weight: var(--fw-bold);
+}
+
+.social-icon-container a:hover {
+
+    background: var(--clr-linear-gradient-transparent);
+}
+
+.social-icon-container a:first-child i {
+    color: #dd4b39;
+}
+
+.social-icon-container a:nth-child(2) i {
+    color: var(--clr-primary);
+}
+
+.social-icon-container a:nth-child(3) i {
+    color: #3b5998;
+}

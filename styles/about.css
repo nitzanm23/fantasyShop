@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./flags.css');
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./general.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* Team cards display & padding */
+    .team_cards {
+        display: block;
+    }
+
+    .team_card_item {
+        padding: calc(2*var(--sizing-px));
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /* Team cards display & padding */
+    .team_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: calc(20*var(--sizing-rem));
+    }
+
+    .team_card_item {
+        padding: calc(2*var(--sizing-px));
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /* Team cards padding */
+    .team_card_item {
+        padding: 0;
+    }
+}
+
+/* About us css */
+body {
+    background: var(--clr-linear-gradient1-l);
+}
+
+/* Header */
+.parallax {
+    /* The image used */
+    background-image: url("../assets/images/about_us/about_us.png");
+}
+
+/* Team section */
+/* Team cards */
+.team_card {
+    position: relative;
+    display: block;
+    height: calc(10*var(--sizing-percent));
+    border-radius: calc(4*var(--sizing-px));
+    overflow: hidden;
+    box-shadow: var(--box-shadow1);
+}
+
+.team_card:hover {
+    filter: var(--drop-shadow-black);
+}
+
+.team_card_image {
+    width: calc(10*var(--sizing-percent));
+    height: auto;
+    object-fit: cover;
+}
+
+/* Transition property for transformation of images */
+.team_card .team_card_image {
+    transition: transform .5s ease-in-out;
+}
+
+/* Transforming the image when container gets hovered */
+.team_card:hover .team_card_image {
+    transform: scale(2) rotate(25deg);
+}
+
+.team_card_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: calc(4*var(--sizing-px));
+    background: var(--clr-linear-gradient1-r);
+    transform: translateY(calc(10*var(--sizing-percent)));
+    transition: .2s ease-in-out;
+}
+
+.team_card:hover .team_card_overlay {
+    transform: translateY(0);
+}
+
+.team_card_header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: calc(20*var(--sizing-rem));
+    padding: calc(10*var(--sizing-rem));
+    border-radius: calc(4*var(--sizing-px));
+    border-top-right-radius: 0;
+    background: var(--clr-linear-gradient1-r);
+    transform: translateY(calc(-10*var(--sizing-percent)));
+    transition: .2s ease-in-out;
+}
+
+.team_card_arc {
+    width: calc(8*var(--sizing-px));
+    height: calc(8*var(--sizing-px));
+    position: absolute;
+    bottom: calc(10*var(--sizing-percent));
+    right: 0;
+    z-index: 1;
+}
+
+.team_card_arc path {
+    fill: var(--clr-path-fill);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.team_card:hover .team_card_header {
+    transform: translateY(0);
+}
+
+.team_card_thumb {
+    flex-shrink: 0;
+    width: calc(5*var(--sizing-px));
+    height: calc(5*var(--sizing-px));
+    border-radius: calc(5*var(--sizing-percent));
+}
+
+.team_card_title {
+    font-size: calc(10*var(--sizing-rem));
+    margin: 0 0 calc(3*var(--sizing-rem));
+    color: var(--clr-primary);
+}
+
+.team_card_status {
+    font-size: calc(8*var(--sizing-rem));
+    color: var(--clr-primary);
+}
+
+.team_card_description {
+    padding: 0 calc(20*var(--sizing-rem)) calc(3*var(--sizing-rem));
+    margin: 0;
+    color: var(--clr-primary);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    font-size: calc(8*var(--sizing-rem));
+
+}
+
+.team_card_links {
+    text-align: center;
+    padding: 0 calc(20*var(--sizing-rem)) calc(3*var(--sizing-rem));
+}
+
+.team_card_links a {
+    padding-inline: calc(var(--sizing-px)/2);
+}
+
+.team_card_links a:hover {
+    filter: var(--drop-shadow-black);
+}
+
+.glow-on-hover{
+    margin: auto;
+    margin-bottom: calc(30* var(--sizing-rem));
+}
