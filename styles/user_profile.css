@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./flags.css');
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./general.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .profile-img {
+        border-radius: calc(5*var(--sizing-percent));
+        width: calc(30*var(--sizing-px));
+        height: calc(30*var(--sizing-px));
+        object-fit: cover;
+        box-shadow: var(--box-shadow1);
+        margin: 0 auto;
+        filter: var(--drop-shadow-black);
+    }
+
+    .ul-main-section-grid {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .profile-img {
+        width: calc(20*var(--sizing-px));
+        height: calc(20*var(--sizing-px));
+    }
+
+    .ul-main-section-grid {
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .profile-img {
+        border-radius: calc(5*var(--sizing-percent));
+        width: calc(30*var(--sizing-px));
+        height: calc(30*var(--sizing-px));
+        object-fit: cover;
+        box-shadow: var(--box-shadow1);
+        margin: 0 auto;
+        filter: var(--drop-shadow-black);
+    }
+
+    .ul-main-section-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+}
+
+/* User Profile css */
+body {
+    background: var(--clr-linear-gradient1-l);
+}
+
+#user_profile_video {
+    height: calc(70*var(--sizing-px));
+    position: static;
+    top: 0;
+    left: 0;
+    width: calc(10*var(--sizing-percent));
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: none;
+    display: block;
+    margin-bottom: 0px;
+    min-width: calc(10*var(--sizing-percent));
+    min-height: calc(10*var(--sizing-percent));
+    box-shadow: var(--box-shadow1);
+}
+
+.main-section {
+    margin-top: calc(-10*var(--sizing-px));
+}
+
+/* Line under h2 position & width */
+.h2-main-section::before,
+.h2-main-section::after {
+    width: 0;
+}
+
+.ul-main-section-grid span {
+    font-weight: var(--fw-bold);
+}
+
+.ul-main-section-grid li {
+    width: calc(10* var(--sizing-percent));
+    color: var(--clr-secondary);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(30* var(--sizing-rem));
+    line-height: 1.2;
+}
+
+.glow-on-hover {
+    margin: auto;
+}
