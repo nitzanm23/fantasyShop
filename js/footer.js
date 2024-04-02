@@ -97,6 +97,9 @@ const createFooter = () => {
               <a href="./about.html">About</a>
               <a href="./contact_us.html">Contact</a>
               <a href="./careers.html">Careers</a>
+              <a href="./product.html">Products</a>
+              <a href="./search.html">Search</a>
+              <a href="./404.html">404 Page</a>
             </li>
             <!-- Grid column -->
             <li>

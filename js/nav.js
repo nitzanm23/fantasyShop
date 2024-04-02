@@ -50,9 +50,9 @@ const createNav = () => {
           ><i class="fa-solid fa-cart-shopping"></i
         ></a>
         <div class="dropdown-content">
-          <a href="#">Go to cart</a>
+          <a href="#!">Go to cart</a>
           <div class="my-dropdown-divider"></div>
-          <a href="#">Empty cart</a>
+          <a href="#!">Empty cart</a>
         </div>
       </div>
     </li>
@@ -63,13 +63,13 @@ const createNav = () => {
           ><i class="fa-solid fa-earth"></i
         ></a>
         <div class="dropdown-content">
-          <a href="#">
+          <a href="#!">
             <i class="flag flag-us"></i>
             English
             <i class="fas fa-check"></i>
           </a>
           <div class="my-dropdown-divider"></div>
-          <a href="#">
+          <a href="#!">
             <i class="flag flag-il"></i>
             Hebrew
           </a>
@@ -122,11 +122,11 @@ const createNav = () => {
               <i class="fa-solid fa-cart-shopping"></i>
             </p>
             <div class="subnav-content">
-              <a href="#">Go to cart</a>
+              <a href="#!">Go to cart</a>
               <a class="not-hover"
                 ><div class="my-dropdown-divider"></div
               ></a>
-              <a href="#">Empty cart</a>
+              <a href="#!">Empty cart</a>
             </div>
           </li>
           <li><div class="my-dropdown-divider"></div></li>
@@ -136,7 +136,7 @@ const createNav = () => {
               <i class="fa-solid fa-earth"></i>
             </p>
             <div class="subnav-content">
-              <a href="#">
+              <a href="#!">
                 <i class="flag flag-us"></i>
                 English
                 <i class="fas fa-check"></i>
@@ -144,7 +144,7 @@ const createNav = () => {
               <a class="not-hover"
                 ><div class="my-dropdown-divider"></div
               ></a>
-              <a href="#">
+              <a href="#!">
                 <i class="flag flag-il"></i>
                 Hebrew
               </a>
@@ -158,11 +158,11 @@ const createNav = () => {
   <div class="my-dropdown-divider"></div>
   <!-- Links below the navbar -->
   <ul class="links-container">
-    <li class="link-item"><a href="#" class="link">home</a></li>
-    <li class="link-item"><a href="#" class="link">women</a></li>
-    <li class="link-item"><a href="#" class="link">men</a></li>
-    <li class="link-item"><a href="#" class="link">kids</a></li>
-    <li class="link-item"><a href="#" class="link">accessories</a></li>
+    <li class="link-item"><a href="#!" class="link">home</a></li>
+    <li class="link-item"><a href="#!" class="link">women</a></li>
+    <li class="link-item"><a href="#!" class="link">men</a></li>
+    <li class="link-item"><a href="#!" class="link">kids</a></li>
+    <li class="link-item"><a href="#!" class="link">accessories</a></li>
   </ul>
     `;
 };

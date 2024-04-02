@@ -35,10 +35,6 @@
     /* font optical sizing */
     --fs-auto: auto;
 
-    /* font size */
-    --fs-base: 1.5rem;
-    --fs-header: calc(2.5*var(--fs-base));
-
     /* sizing */
     --sizing-rem: 0.1rem;
     --sizing-px: 10px;
