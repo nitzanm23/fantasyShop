@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('./vars.css');
+@import url('./reset.css');
+@import url('./loader_show_content.css');
+@import url('./flags.css');
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./general.css');
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .h1-div-header {
+        font-size: calc(30* var(--sizing-rem));
+    }
+
+    h5.shine-animation {
+        font-size: calc(20* var(--sizing-rem));
+    }
+
+    .call-to-action .glow-on-hover {
+        font-size: calc(10*var(--sizing-rem));
+    }
+
+    .collection p {
+        font-size: calc(3*var(--sizing-px));
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .h1-div-header {
+        font-size: calc(25* var(--sizing-rem));
+    }
+
+    h5.shine-animation {
+        font-size: calc(15* var(--sizing-rem));
+    }
+
+    .call-to-action .glow-on-hover {
+        font-size: calc(8*var(--sizing-rem));
+    }
+
+    .h5-div-header {
+        font-size: calc(7.5* var(--sizing-rem));
+    }
+
+    .collection p {
+        font-size: calc(1.5*var(--sizing-px));
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .h1-div-header {
+        font-size: calc(45* var(--sizing-rem));
+    }
+
+    h5.shine-animation {
+        font-size: calc(25* var(--sizing-rem));
+    }
+
+    .call-to-action .glow-on-hover {
+        font-size: calc(15*var(--sizing-rem));
+    }
+
+    .collection p {
+        font-size: calc(5*var(--sizing-px));
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .h1-div-header {
+        font-size: calc(60* var(--sizing-rem));
+    }
+}
+
+/* Index (Home) - Css  */
+/* body{
+    אם אני מגדיר את זה אז המסך טעינה יהיה בצבע רקע ליינר ולא צבע אחיד
+    background: var(--clr-linear-gradient1);
+    min-height: 100vh;
+} */
+/* Call To Action & Video - Header */
+#index_video {
+    height: calc(70*var(--sizing-px));
+    position: static;
+    top: 0;
+    left: 0;
+    width: calc(10*var(--sizing-percent));
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: none;
+    display: block;
+    margin-bottom: 0px;
+    min-width: calc(10*var(--sizing-percent));
+    min-height: calc(10*var(--sizing-percent));
+    box-shadow: var(--box-shadow1);
+}
+
+.div-header1 {
+    justify-content: left;
+}
+
+.div-header3 {
+    text-align: left;
+    background-color: transparent;
+}
+
+.call-to-action {
+    color: var(--clr-invert);
+    justify-content: left;
+}
+
+.call-to-action .glow-on-hover {
+    margin-top: calc(10*var(--sizing-rem));
+}
+
+.h1-div-header {
+    text-transform: capitalize;
+}
+
+.h5-div-header {
+    text-transform: capitalize;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.call-to-action h5:nth-child(3) p,
+.call-to-action h5:nth-child(4) p {
+    padding-bottom: calc(2*var(--sizing-px));
+}
+
+h5.shine-animation {
+    padding-bottom: calc(4*var(--sizing-px));
+}
+
+/* Product section */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: calc(2*var(--sizing-px)) 0;
+}
+
+.product-category {
+    padding: 0 var(--sizing-vw);
+    font-size: calc(3*var(--sizing-px));
+    font-weight: var(--fw-bold);
+    margin-block: calc(3*var(--sizing-px));
+    text-transform: capitalize;
+    text-align: center;
+    filter: var(--drop-shadow-black);
+}
+
+/* Inside product */
+.product-container {
+    padding: 0 var(--sizing-vw);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: calc(10* var(--sizing-percent));
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: calc(3* var(--sizing-px));
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: calc(25*var(--sizing-px));
+    height: calc(45*var(--sizing-px));
+    margin-right: calc(4*var(--sizing-px));
+}
+
+.product-image {
+    position: relative;
+    width: calc(10*var(--sizing-percent));
+    height: calc(35*var(--sizing-px));
+    overflow: hidden;
+    border-radius: calc(3*var(--sizing-px));
+    box-shadow: var(--box-shadow1);
+}
+
+.product-image:hover {
+    filter: var(--drop-shadow-black);
+}
+
+.product-thumb {
+    width: calc(10*var(--sizing-percent));
+    height: calc(35*var(--sizing-px));
+    object-fit: cover;
+}
+
+.discount-tag {
+    position: absolute;
+    background: var(--clr-linear-gradient-transparent);
+    padding: calc(var(--sizing-px)/2);
+    border-radius: calc(var(--sizing-px)/2);
+    color: #ff7d7d;
+    right: var(--sizing-px);
+    top: var(--sizing-px);
+    text-transform: capitalize;
+    font-weight: var(--fw-bold);
+}
+
+.card-btn {
+    position: absolute;
+    bottom: var(--sizing-px);
+    left: calc(5*var(--sizing-percent));
+    transform: translateX(calc(-5*var(--sizing-percent)));
+    padding: var(--sizing-px);
+    width: calc(9*var(--sizing-percent));
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: var(--clr-linear-gradient-transparent);
+    border-radius: calc(var(--sizing-px)/2);
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    font-weight: var(--fw-400);
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: var(--clr-linear-gradient-transparent);
+    font-weight: var(--fw-bold);
+    filter: var(--drop-shadow-black);
+    box-shadow: var(--box-shadow1);
+}
+
+.product-info {
+    width: calc(10*var(--sizing-percent));
+    height: calc(10*var(--sizing-px));
+    padding-top: calc(2.5*var(--sizing-px));
+}
+
+.product-brand {
+    text-transform: uppercase;
+}
+
+.product-short-des {
+    width: calc(10*var(--sizing-percent));
+    height: calc(2*var(--sizing-px));
+    line-height: calc(2*var(--sizing-px));
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: calc(var(--sizing-px)/2) 0;
+}
+
+.price {
+    font-weight: var(--fw-bold);
+    font-size: calc(2*var(--sizing-px));
+}
+
+.actual-price {
+    margin-left: calc(2*var(--sizing-px));
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+/* Nxt and Pre button */
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: calc(var(--sizing-vw)/2);
+    height: calc(10*var(--sizing-percent));
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+/* Collection section */
+.collection-container {
+    width: calc(10*var(--sizing-percent));
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: calc(3*var(--sizing-px));
+    padding: 0 var(--sizing-vw);
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: calc(10*var(--sizing-percent));
+    height: calc(10*var(--sizing-percent));
+    object-fit: cover;
+    border-radius: calc(3* var(--sizing-px));
+    box-shadow: var(--box-shadow1);
+}
+
+.collection img:hover {
+    filter: var(--drop-shadow-black);
+    box-shadow: var(--box-shadow1);
+}
+
+.collection:last-child img {
+    height: calc(25*var(--sizing-px));
+}
+
+.collection p {
+    position: absolute;
+    top: calc(5*var(--sizing-percent));
+    left: calc(5*var(--sizing-percent));
+    transform: translate(calc(-5*var(--sizing-percent)), calc(-5*var(--sizing-percent)));
+    text-align: center;
+    color: var(--clr-invert);
+    text-transform: capitalize;
+}
+
+.collection:hover p {
+    font-weight: var(--fw-bold);
+    filter: var(--drop-shadow-black);
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: var(--sizing-px);
+}
